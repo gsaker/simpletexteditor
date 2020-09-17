@@ -8,12 +8,6 @@ int main() {
    mchar(79,"█");
    printf("Type Commands at the bottom\n");
    mchar(79,"█");
-   printf("Commands:\n");
-   printf("Help : /help\n");
-   printf("Quit The Utility : /exit\n");
-   printf("Go Back One Stage : /back\n");
-   printf("Go Back here : /menu\n");
-   mchar(79,"█");
    
 
    getinfo();

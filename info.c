@@ -17,47 +17,15 @@ void getinfo()
     {
         ifagain = 1;
         mchar(79,"█");
-        printf("Type Path to File To Read\n");
-        mchar(79,"█");
-        printf("Commands:\n");
-        printf("Help : /help\n");
-        printf("Quit The Utility : /exit\n");
-        printf("Go Back One Stage : /back\n");
-        printf("Go Back here : /menu\n");
-        printf("Select Desktop Path : /desktop\n");
-        printf("Select Documents Path : /documents\n");
-        printf("Select Downloads Folder : /downloads\n");
-        printf("Select Home Folder : /homefolder\n");
+        printf("Type Path to File To Read (including a / at the end eg: /Users/user/Desktop/)\n");
         mchar(79,"█");
         printf("\n");
         scanf ("%s",path);
         strcpy(inputc,path);
-        //check (inputc);
-        if (!strcmp(path,"/desktop")||!strcmp(path,"/Desktop"))
-        {
-            strcpy(path, "/Users/georgesaker/Desktop/");
-        }
-         else if (!strcmp(path,"/downloads")||!strcmp(path,"/Downloads"))
-        {
-            strcpy(path, "/Users/georgesaker/Downloads/");;
-        }
-         else if (!strcmp(path,"/documents")||!strcmp(path,"/Documents"))
-        {
-            strcpy(path, "/Users/georgesaker/Documents/");
-        }
-         else if (!strcmp(path,"/homefolder")||!strcmp(path,"/Documents"))
-        {
-            strcpy(path, "/Users/georgesaker/");
-        }
+    
         system("clear");
         mchar(79,"█");
         printf("Type Name of File To Read? (Including Extension)\n");
-        mchar(79,"█");
-        printf("Commands:\n");
-        printf("Help : /help\n");
-        printf("Quit The Utility : /exit\n");
-        printf("Go Back One Stage : /back\n");
-        printf("Go Back to the menu : /menu\n");
         mchar(79,"█");
         printf("\n");
         scanf("%s",name);
@@ -74,32 +42,10 @@ void getinfo()
     else if (readwrite==2)
     {
         mchar(79,"█");
-        printf("Type Path to New File\n");
-        mchar(79,"█");
-        printf("Commands:\n");
-        printf("Help : /help\n");
-        printf("Quit The Utility : /exit\n");
-        printf("Go Back One Stage : /back\n");
-        printf("Go Back here : /menu\n");
-        printf("Select Desktop Path : /desktop\n");
-        printf("Select Documents Path : /documents\n");
-        printf("Select Downloads Folder : /downloads\n");
-        printf("Select Home Folder : /homefolder\n");
+        printf("Type Path to New File (including a / at the end eg: /Users/user/Desktop/)\n");
         mchar(79,"█");
         printf("\n");
         scanf ("%s",path);
-        if (!strcmp(path,"/desktop")||!strcmp(path,"/Desktop"))
-        {
-            strcpy(path, "/Users/georgesaker/Desktop/");;
-        }
-         else if (!strcmp(path,"/downloads")||!strcmp(path,"/Downloads"))
-        {
-            strcpy(path, "/Users/georgesaker/Downloads/");;
-        }
-         else if (!strcmp(path,"/documents")||!strcmp(path,"/Documents"))
-        {
-            strcpy(path, "/Users/georgesaker/Documents/");
-        }
         system("clear");
         mchar(79,"█");
         printf("Type Name of File To Create With No Spaces (Including Extension)\n");
@@ -136,43 +82,13 @@ void getinfo()
     {
         ifagain = 0;
         mchar(79,"█");
-        printf("Type Path to File to Append\n");
-        mchar(79,"█");
-        printf("Commands:\n");
-        printf("Help : /help\n");
-        printf("Quit The Utility : /exit\n");
-        printf("Go Back One Stage : /back\n");
-        printf("Go Back here : /menu\n");
-        printf("Select Desktop Path : /desktop\n");
-        printf("Select Documents Path : /documents\n");
-        printf("Select Downloads Folder : /downloads\n");
-        printf("Select Home Folder : /homefolder\n");
+        printf("Type Path to File to Append (including a / at the end eg: /Users/user/Desktop/)\n");
         mchar(79,"█");
         printf("\n");
         scanf ("%s",path);
-        
-        if (!strcmp(path,"/desktop")||!strcmp(path,"/Desktop"))
-        {
-            strcpy(path, "/Users/georgesaker/Desktop/");;
-        }
-         else if (!strcmp(path,"/downloads")||!strcmp(path,"/Downloads"))
-        {
-            strcpy(path, "/Users/georgesaker/Downloads/");;
-        }
-         else if (!strcmp(path,"/documents")||!strcmp(path,"/Documents"))
-        {
-            strcpy(path, "/Users/georgesaker/Documents/");
-        }
-
          system("clear");
         mchar(79,"█");
         printf("Type Name of File To Append With No Spaces (Including Extension)\n");
-        mchar(79,"█");
-        printf("Commands:\n");
-        printf("Help : /help\n");
-        printf("Quit The Utility : /exit\n");
-        printf("Go Back One Stage : /back\n");
-        printf("Go back to the menu : /menu\n");
         mchar(79,"█");
         printf("\n");
         scanf("%s",name);
